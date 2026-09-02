@@ -31,7 +31,12 @@ jobs:
       - name: PowerShell 문법 검사
         shell: pwsh
         run: |
-          $files = @('tools/sync_codex_skills.ps1', 'tools/PDF_READING_KIT/tools/pdf_to_md.ps1')
+          $files = @(
+            'tools/sync_codex_skills.ps1',
+            'tools/PDF_READING_KIT/tools/pdf_to_md.ps1',
+            'tools/HWPX_READING_KIT/tools/install_hwpx_converter.ps1',
+            'tools/HWPX_READING_KIT/tools/convert_hwp_to_hwpx.ps1'
+          )
           foreach ($file in $files) {
             $tokens = $null
             $errors = $null
