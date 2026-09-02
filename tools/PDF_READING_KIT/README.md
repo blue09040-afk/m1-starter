@@ -2,6 +2,8 @@
 
 PDF를 로컬에서 먼저 읽고 필요할 때만 외부 OCR을 사용하기 위한 경량 starter입니다.
 
+상세 실행 순서와 외부 전송 경계는 `guides/PDF_READING_KIT_WORKFLOW.md`를 확인하세요.
+
 ## 설치
 
 ```powershell
