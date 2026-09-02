@@ -2,7 +2,7 @@
 
 이 저장소는 실제 업무에서 사용하던 `m1` 지침·스킬·프롬프트·문서처리 도구를 출발점으로 제공하는 **독립 운영용 starter**입니다.
 
-처음 복제하거나 전달받았다면 먼저 [`STARTER_GUIDE.md`](STARTER_GUIDE.md)를 확인하세요.
+처음 복제하거나 전달받았다면 먼저 [`STARTER_GUIDE.md`](STARTER_GUIDE.md)를 확인하세요. 실제 업무에서 자주 쓰는 요청 예시는 [`QUICK_START.md`](QUICK_START.md), ChatGPT 프로젝트 상위 지침 권장안은 [`PROJECT_INSTRUCTIONS_RECOMMENDED.md`](PROJECT_INSTRUCTIONS_RECOMMENDED.md)에 정리되어 있습니다.
 
 ## 사용 원칙
 
@@ -10,7 +10,7 @@
 - 자신의 담당업무, 조직 정책, PC 환경과 사용 모델에 맞게 자유롭게 수정·삭제·추가할 수 있습니다.
 - 원본 제공자의 `m1`과 자동 동기화되지 않습니다. 필요한 개선만 선택적으로 반영합니다.
 - 기존 문서에 등장하는 특정 PC 경로·사용환경은 운영 사례 또는 예시일 수 있으며, 현재 사용자의 환경에 맞게 바꿉니다.
-- 특정 업무용 스킬(예: 화성시 담당부서 확인, 권익위·공익신고·진정민원·일상감사)은 필요할 때만 사용하며, 필요 없으면 제거해도 됩니다.
+- 특정 업무용 스킬(예: 화성시 담당부서 확인, 권익위·공익신고·진정민원)은 필요할 때만 사용하며, 필요 없으면 제거해도 됩니다. 일상감사처럼 별도 전용 skill이 없는 업무는 공통 행정문서 검토 기준을 조합해 처리할 수 있습니다.
 
 ## 시작점
 
@@ -21,6 +21,8 @@
 - 업무별 실행 절차: `skills/`
 - 반복 입력문: `prompts/`
 - 로컬 문서처리 보조도구: `tools/`
+- 직원용 업무 예시: `QUICK_START.md`
+- ChatGPT 프로젝트 지침 권장안: `PROJECT_INSTRUCTIONS_RECOMMENDED.md`
 
 ## 처음 사용할 때
 
@@ -29,6 +31,7 @@
 3. 조직의 GitHub·외부 AI·개인정보 정책에 맞게 PC 환경별 동기화 규칙을 조정합니다.
 4. Codex 스킬을 로컬에 설치할 경우 `tools/sync_codex_skills.ps1`을 먼저 `-DryRun`으로 확인합니다.
 5. HWPX Kordoc runtime을 사용할 경우 `.github/workflows/hwpx-kordoc-check.yml`의 첫 성공 실행을 확인합니다.
+6. 일상적인 사용 방법은 `QUICK_START.md`의 요청 예시부터 시작하면 됩니다.
 
 ## PC 환경별 동기화 방식
 
