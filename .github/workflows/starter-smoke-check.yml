@@ -1,0 +1,43 @@
+name: Starter Smoke Check
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "tools/**"
+      - ".github/workflows/starter-smoke-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - ".github/workflows/starter-smoke-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python 문법 검사
+        shell: pwsh
+        run: |
+          python -m py_compile tools/PDF_READING_KIT/src/pdf_to_md.py tools/PDF_READING_KIT/src/pii_masking_core.py
+      - name: PowerShell 문법 검사
+        shell: pwsh
+        run: |
+          $files = @('tools/sync_codex_skills.ps1', 'tools/PDF_READING_KIT/tools/pdf_to_md.ps1')
+          foreach ($file in $files) {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path $file), [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              $errors | ForEach-Object { Write-Error $_.Message }
+              exit 1
+            }
+          }

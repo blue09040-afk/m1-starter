@@ -1,0 +1,17 @@
+{
+  "name": "hwpx-writing-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lightweight Kordoc wrapper for HWPX writing, templating, patching, filling, collecting, and validation.",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "check": "node --check src/core.mjs && node --check src/cli.mjs && node --check src/hwpx-package.mjs && node --check src/form-fields.mjs && node --check src/template-prep.mjs && node --check src/text-patch-fallback.mjs",
+    "test": "node --test test/smoke.mjs"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "jszip": "3.10.1",
+    "kordoc": "4.9.2"
+  }
+}

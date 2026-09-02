@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "updated_on": null,
+  "active_bundles": [],
+  "bundle_fields": {
+    "bundle_id": "규칙 묶음 식별자",
+    "effective_from": "YYYY-MM-DD",
+    "effective_to": "YYYY-MM-DD 또는 null",
+    "catalog_path": "rules 하위 rule_catalog.csv 경로",
+    "source_log_path": "공식 출처 기록 경로",
+    "status": "candidate 또는 verified"
+  },
+  "selection_rule": "사건 기준일에 유효하고 verified 상태인 묶음만 후보로 선택한다."
+}

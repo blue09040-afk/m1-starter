@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "일상감사 사건 검토 데이터",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["case", "documents", "facts", "conflicts", "rule_applications", "findings", "unresolved_items", "validation"],
+  "properties": {
+    "case": {"type":"object","additionalProperties":false,"required":["title","review_types","status"],"properties":{"case_id":{"type":["string","null"]},"title":{"type":"string","minLength":1},"requesting_department":{"type":["string","null"]},"received_date":{"type":["string","null"],"format":"date"},"review_types":{"type":"array","minItems":1,"items":{"enum":["공사","용역","물품","변경계약","설계변경","예산·지출","일반업무","확인 필요"]}},"reference_dates":{"type":"object","additionalProperties":false,"properties":{"bid_notice_date":{"type":["string","null"],"format":"date"},"contract_date":{"type":["string","null"],"format":"date"},"cost_basis_date":{"type":["string","null"],"format":"date"}}},"status":{"enum":["진행 중","확인 필요","검토 완료","최종 확정"]}}},
+    "documents": {"type":"array","items":{"type":"object","additionalProperties":false,"required":["document_id","path","role","extraction_confidence","processing_status"],"properties":{"document_id":{"type":"string"},"path":{"type":"string"},"sha256":{"type":["string","null"],"pattern":"^[A-Fa-f0-9]{64}$"},"role":{"enum":["검토대상","참고","과거버전","중복후보","판독불가"]},"document_type":{"type":["string","null"]},"extraction_method":{"type":["string","null"]},"extraction_confidence":{"enum":["높음","중간","낮음","미확인"]},"processing_status":{"enum":["완료","제외","미확인","판독불가"]},"notes":{"type":["string","null"]}}}},
+    "facts": {"type":"array","items":{"type":"object","additionalProperties":false,"required":["fact_id","field","value","status","sources"],"properties":{"fact_id":{"type":"string"},"field":{"type":"string"},"value":{},"unit":{"type":["string","null"]},"status":{"enum":["확정","잠정","확인 필요","법령 확인 필요","검토 제외"]},"sources":{"type":"array","items":{"$ref":"#/$defs/source_reference"}},"notes":{"type":["string","null"]}}}},
+    "conflicts": {"type":"array"},
+    "rule_applications": {"type":"array"},
+    "findings": {"type":"array"},
+    "unresolved_items": {"type":"array"},
+    "validation": {"type":"object","additionalProperties":true}
+  },
+  "$defs": {"source_reference":{"type":"object","additionalProperties":false,"required":["document_id","location"],"properties":{"document_id":{"type":"string"},"location":{"type":"string"},"quote_or_summary":{"type":["string","null"]}}}}
+}

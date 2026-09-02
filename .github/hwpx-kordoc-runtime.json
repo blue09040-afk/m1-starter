@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "artifact_name": "m1-starter-hwpx-kordoc-chat-linux-x64",
+  "workflow_run_id": null,
+  "source_sha": null,
+  "kordoc_version": "4.9.2",
+  "platform": "linux-x64",
+  "retention_days": 1,
+  "reuse_policy": "reuse-if-not-expired; rerun-only-if-missing-or-expired",
+  "reuse_verified_in_m1_starter": false,
+  "missing_or_expired_regeneration_verified_in_m1_starter": false,
+  "status": "pending-first-starter-run"
+}
