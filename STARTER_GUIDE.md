@@ -24,6 +24,8 @@ Template Repository를 사용하지 않는 경우에도 공유받은 starter 자
 - 업무별 실행 절차: `skills/`
 - 반복 작업 입력문: `prompts/`
 - 로컬 보조도구: `tools/`
+- 자주 쓰는 업무 요청 예시: `QUICK_START.md`
+- ChatGPT 프로젝트 상위 지침 권장안: `PROJECT_INSTRUCTIONS_RECOMMENDED.md`
 
 ## 처음 할 일
 
@@ -33,6 +35,8 @@ Template Repository를 사용하지 않는 경우에도 공유받은 starter 자
 4. Codex 스킬을 로컬에 설치할 경우 `tools/sync_codex_skills.ps1 -DryRun`으로 먼저 확인합니다.
 5. HWPX Kordoc 기능을 사용할 경우 `HWPX Kordoc Check`의 성공 여부를 확인합니다.
 6. PDF 도구는 `tools/PDF_READING_KIT/README.md`에 따라 각 PC에서 Python 의존성을 설치합니다.
+7. 초기 설정이 끝나면 `QUICK_START.md`의 요청 예시로 실제 업무를 시작합니다.
+8. ChatGPT 프로젝트를 별도로 만들 경우 `PROJECT_INSTRUCTIONS_RECOMMENDED.md`를 상위 프로젝트 지침의 출발점으로 사용합니다.
 
 ## 복사되지 않는 것
 
