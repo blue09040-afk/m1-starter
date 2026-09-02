@@ -1,15 +1,20 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "artifact_name": "m1-starter-hwpx-kordoc-chat-linux-x64",
-  "artifact_id": 9834213781,
-  "artifact_digest": "sha256:4b78ad8e6e8aa875fb052e88282ec5f1f94938d04d07f8ffa4a2cab96893293f",
-  "workflow_run_id": 33598371296,
-  "source_sha": "9d89ac98284a784527236a4282bccdda7f922e79",
   "kordoc_version": "4.9.2",
   "platform": "linux-x64",
   "retention_days": 1,
-  "reuse_policy": "reuse-if-not-expired; rerun-only-if-missing-or-expired",
-  "reuse_verified_in_m1_starter": true,
-  "missing_or_expired_regeneration_verified_in_m1_starter": false,
-  "status": "verified-first-starter-run"
+  "artifact_scope": "repository-local",
+  "clone_requires_first_run": true,
+  "template_source_verification": {
+    "repository": "blue09040-afk/m1-starter",
+    "workflow_run_id": 33598371296,
+    "artifact_id": 9834213781,
+    "artifact_digest": "sha256:4b78ad8e6e8aa875fb052e88282ec5f1f94938d04d07f8ffa4a2cab96893293f",
+    "source_sha": "9d89ac98284a784527236a4282bccdda7f922e79",
+    "workflow_conclusion": "success",
+    "artifact_contents_verified": true
+  },
+  "cloned_repository_policy": "run HWPX Kordoc Check once in the cloned repository and use only that repository's artifact",
+  "status": "template-source-verified"
 }
