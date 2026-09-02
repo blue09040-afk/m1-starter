@@ -30,6 +30,17 @@
 4. Codex 스킬을 로컬에 설치할 경우 `tools/sync_codex_skills.ps1`을 먼저 `-DryRun`으로 확인합니다.
 5. HWPX Kordoc runtime을 사용할 경우 `.github/workflows/hwpx-kordoc-check.yml`의 첫 성공 실행을 확인합니다.
 
+## PC 환경별 동기화 방식
+
+조직의 보안·네트워크 정책을 최우선으로 적용합니다. 아래 기준은 starter의 안전한 초기값이며, 실제 허용 범위가 다르면 새 저장소의 정본에 맞게 조정합니다.
+
+| 환경 | 기본 방식 | 하지 않을 일 |
+|---|---|---|
+| 조직의 제한 PC | 현재 환경에서 승인된 GitHub 플러그인·MCP 등 허용된 경로로 원격 기준선을 확인하고 기능 브랜치·PR 방식으로 변경합니다. | 승인되지 않은 SSH·PAT·GCM 직접 로그인, 프록시·방화벽 우회, 민감자료의 임의 외부 전송 |
+| Git 사용이 허용된 PC | 조직 정책이 허용하는 범위에서 일반 Git의 `fetch`·`pull`·기능 브랜치·PR 흐름을 사용합니다. | 사건자료·개인정보·인증정보·로컬 런타임을 Git 이력에 포함하는 작업 |
+
+동기화 전에는 `.gitignore`만 믿지 말고 실제 변경 파일을 확인하여 사건자료, 개인정보, 내부 문서번호, 비공개 참조본, `.env`, API 키·토큰, OCR·변환 결과, 런타임·설치파일이 포함되지 않았는지 점검합니다. 이 starter를 복제한 뒤에는 새 저장소가 정본이며 원본 제공자의 `m1`과 자동 동기화하지 않습니다.
+
 ## 포함 범위
 
 - `AGENTS.md`, `CHATGPT_ENTRYPOINT.md`, `GROK_ENTRYPOINT.md`
@@ -37,6 +48,7 @@
 - 재사용 가능한 `tools/`의 소스·설명·설정
 - 비식별 예시 및 템플릿
 - HWPX Kordoc 검증 workflow
+- 새 저장소에서 이후 채택 이력을 기록하기 위한 빈 `improvements/adoption_log.md`
 
 ## 포함하지 않는 것
 
@@ -44,7 +56,7 @@
 - API 키, 토큰, 쿠키, `.env` 실제 값
 - OneOCR DLL·모델, HWPX 변환기 등 로컬 런타임·설치파일
 - PDF 도구의 vendored Python 패키지 사본
-- 개인 `LLM_Wiki/`, 개선 이력, 과거 백업과 비공유 보관자료
+- 개인 `LLM_Wiki/`, 기존 사용자의 개선 이력, 과거 백업과 비공유 보관자료
 - 기존 Actions 실행 이력·artifact·cache·Secrets·Variables·Ruleset
 
 `tools/PDF_READING_KIT`은 starter에서 소스와 설치정보만 제공하며 `vendor/`는 포함하지 않습니다. 필요한 Python 의존성은 해당 도구의 `requirements.txt`와 안내문을 기준으로 각 환경에서 설치합니다.
