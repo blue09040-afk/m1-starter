@@ -2,6 +2,8 @@
 
 이 저장소는 실제 업무에서 사용하던 `m1` 지침·스킬·프롬프트·문서처리 도구를 출발점으로 제공하는 **독립 운영용 starter**입니다.
 
+> **공개 템플릿 주의:** 이 저장소 자체에는 실제 사건자료·개인정보·비공개 문서를 업로드하지 마세요. `Use this template`로 자신의 **Private 저장소**를 만든 뒤 실제 업무는 그 저장소에서 수행합니다.
+
 처음 복제하거나 전달받았다면 먼저 [`STARTER_GUIDE.md`](STARTER_GUIDE.md)를 확인하세요. 실제 업무에서 자주 쓰는 요청 예시는 [`QUICK_START.md`](QUICK_START.md), ChatGPT 프로젝트 상위 지침 권장안은 [`PROJECT_INSTRUCTIONS_RECOMMENDED.md`](PROJECT_INSTRUCTIONS_RECOMMENDED.md)에 정리되어 있습니다.
 
 ## 사용 원칙
