@@ -19,7 +19,8 @@
 - 집 PC에서는 사용자가 허용한 개인 네트워크와 계정 범위에서 일반 Git 인증과 `fetch`·`pull`·기능 브랜치·PR 흐름을 사용할 수 있다. 집 PC에서도 공유·개인정보 제외 기준과 PR 검토 절차는 동일하게 적용한다.
 - 사람 또는 AI 에이전트가 직접 작성하는 일반 커밋 메시지와 PR 제목은 한국어를 기본으로 한다. `feat:`, `fix:`, `docs:`, `chore:` 같은 유형 접두어와 코드·파일명·패키지명·명령어·고유명사는 필요한 경우 원문을 유지할 수 있으며, PR 제목에도 같은 기준을 적용해 squash merge 등으로 생성되는 최종 커밋 제목이 가능한 한 한국어로 남도록 한다.
 - Dependabot, GitHub Actions 등 자동화가 생성한 커밋·PR 메시지나 외부 원문 보존이 필요한 Git 작업은 예외로 하며, 한글화를 위해 자동화 동작 자체를 불필요하게 변경하지 않는다.
-- 상세 운영 순서와 기준선 기록 방식은 `README.md`의 `PC 환경별 동기화 방식`을 정본으로 한다.
+- 사람용 개요와 PC 환경별 신뢰 경계는 `README.md`의 `PC 환경별 동기화 방식`에 두고, 반복 실행의 상세 절차와 완료 기준은 `guidance-repo-maintenance`의 `references/repository_sync_workflow.md`를 정본으로 한다.
+- 사용자가 `저장소 확인`, `로컬과 싱크`, `앱에 반영`, `동기화 후 PR`과 같은 요청을 하면 `guidance-repo-maintenance`의 `references/repository_sync_workflow.md`를 적용한다.
 
 ## 지침 역할과 중복 관리
 
