@@ -19,7 +19,7 @@ metadata:
 ## References
 
 - Read `references/official_letter_final_review_detail.txt` for the full detailed review guide.
-- Use `document-validation-pipeline` when final text should be validated after revision.
+- Reuse the prior `document-validation-pipeline` case-review result and perform only its brief consistency check after revision. Run or repeat substantive validation only when it was missing or the basis materially changed.
 - Use `admin-document-base-review` for general Korean administrative writing standards.
 
 ## Output Expectations

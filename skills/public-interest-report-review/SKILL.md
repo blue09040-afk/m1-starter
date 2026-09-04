@@ -15,6 +15,7 @@ metadata:
 4. Draft responses with clear scope: reviewed facts, limits of review, transferred or excluded issues, and items needing supplementation.
 5. Check confidentiality, reporter protection, and personal-data exposure before any outward-facing text.
 6. If legal effect or authority matters, verify the current and time-relevant legal basis and record verification status.
+7. Before drafting a substantive investigation request, review, notice, or reply, use `document-validation-pipeline` once to validate issue coverage, scope, competent authority, proportional recipients, and necessary-minimum data sharing. After drafting, check only that the text matches that validation unless the basis materially changes.
 
 ## Reference Map
 
@@ -31,7 +32,7 @@ Use this section as the short routing layer before opening a reference. For a lo
   - Purpose: maps each public-interest workflow step to the active deidentified Markdown structure example.
   - Read when: drafting or reviewing a stage-specific work product in Chat or Codex.
 - Use `admin-document-base-review` for general administrative drafting principles.
-- Use `document-validation-pipeline` before finalizing an outward-facing reply or report.
+- Use `document-validation-pipeline` after the case scope is set and before drafting substantive text; after drafting, perform only the brief consistency check defined there.
 - Use `hwaseong-staff-lookup` when Hwaseong department or 담당자 routing is needed.
 - Use `hwp-hwpx-processing` separately when reading a source HWP/HWPX or reflecting an already reviewed Markdown basis into HWPX. The Markdown examples in `templates/` are structural references, not binary form templates.
 
