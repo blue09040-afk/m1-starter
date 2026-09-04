@@ -23,7 +23,7 @@ metadata:
 - Use more specific skills when their trigger conditions apply:
   - `public-interest-report-review` for public-interest report handling.
   - `official-letter-final-review` for final polishing before approval or dispatch.
-  - `document-validation-pipeline` after drafting outward-facing or approval-facing documents.
+  - `document-validation-pipeline` once after substantive case review and before drafting; after drafting, use only its brief consistency check unless the basis materially changes.
   - `pdf-reading-kit` or `hwp-hwpx-processing` for fragile document extraction or HWPX work.
 
 ## Boundaries

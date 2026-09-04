@@ -58,7 +58,7 @@
 필요한 수정은 직접 반영해줘.
 ```
 
-관련 정본: `skills/official-letter-final-review/`, `skills/document-validation-pipeline/`
+관련 정본: `skills/official-letter-final-review/`. 사건 검토결과와 문안의 일치 확인은 `skills/document-validation-pipeline/`을 따르며, 문안 작성 전 사건 검토 검증이 없었다면 먼저 보완합니다.
 
 ---
 
@@ -90,7 +90,7 @@
 확인되지 않은 내용은 단정하지 마. 마지막에 결재 전 최종검토까지 해줘.
 ```
 
-현재 starter에는 **진정민원 2단계 전용 세부 skill·샘플은 아직 없습니다.** 2단계는 `admin-document-base-review`를 공통 기준으로 처리하고, 최종 문안에는 `official-letter-final-review`와 `document-validation-pipeline`을 적용합니다. 1단계 전용 양식을 2단계 답변서에 기계적으로 재사용하지 않습니다.
+현재 starter에는 **진정민원 2단계 전용 세부 skill·샘플은 아직 없습니다.** 2단계는 `admin-document-base-review`를 공통 기준으로 처리하고, 사건 쟁점·소관·회신 범위를 정한 뒤 문안 작성 전에 `document-validation-pipeline`을 한 번 적용합니다. 작성 후에는 같은 검증결과와의 일치만 확인하고, 최종 문안의 문체·위험은 `official-letter-final-review`로 다듬습니다. 1단계 전용 양식을 2단계 답변서에 기계적으로 재사용하지 않습니다.
 
 ---
 

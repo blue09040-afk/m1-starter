@@ -16,7 +16,7 @@ metadata:
 5. Design verification items that can produce a meaningful factual answer. Do not repeat questions about facts already confirmed from reliable records merely to obtain the same answer again. When the issue is whether a review actually occurred or how it was documented, prefer asking for the existence and content of review reports, internal approval materials, work memos, consultation records, or other contemporaneous records.
 6. If a prior reply announced a future consultation, technical review, site visit, corrective action, or other follow-up, request its current status and remaining plan when that status is relevant to resolving the petition.
 7. Draft or revise only the variable `< 민원 내용 및 요청사항 정리 >` section unless the user explicitly asks to change the form. Preserve the fixed wording and structure outside that section.
-8. Before finalizing, read `templates/SAMPLE_CATALOG.md` and the active stage-1 deidentified structure example. Apply `admin-document-base-review` for general administrative drafting and `document-validation-pipeline` for substantive finalization.
+8. After the issue and competent-department scope are set, read `templates/SAMPLE_CATALOG.md` and the active stage-1 deidentified structure example, then apply `document-validation-pipeline` once before drafting. Apply `admin-document-base-review` for general administrative drafting and, after drafting, perform only the pipeline's brief consistency check unless the basis materially changes.
 
 ## Stage Boundary
 

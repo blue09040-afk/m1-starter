@@ -28,5 +28,5 @@ metadata:
 ## Related Skills
 
 - Use `official-letter-final-review` for deeper final official-letter tone and risk review.
-- Use `document-validation-pipeline` when the revised text needs a separate validation pass.
+- If a substantive case-review validation already exists, reuse it and apply only the `document-validation-pipeline` brief consistency check to the revised text. Run or repeat substantive validation only when it was missing or the basis materially changed.
 - Use `hwp-hwpx-processing` or `pdf-reading-kit` when source text must be extracted from binary or scanned documents.

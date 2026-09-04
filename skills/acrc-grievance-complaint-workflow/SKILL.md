@@ -12,9 +12,10 @@ metadata:
 1. Confirm that the current folder and `HANDOFF_SUMMARY.md` refer to the same case; exclude previous-case archives and non-shareable reference originals from current-case inference.
 2. Identify the current stage from the live materials: 1단계 department request, 2단계 ACRC explanation/material submission, or 3단계 department notice after ACRC disposition.
 3. Separate the complainant's claims, confirmed record, department position, ACRC request or disposition, and remaining verification items.
-4. Draft the substantive basis in Markdown first. Apply `admin-document-base-review`, the relevant document-reading skill, and `document-validation-pipeline` when finalizing outward- or approval-facing text.
-5. Select the current stage's deidentified Markdown example through `templates/SAMPLE_CATALOG.md` and use it only as a structure reference. For HWP/HWPX form work, call `hwp-hwpx-processing`; do not treat a Markdown example as a binary template.
-6. If the user requests case replacement, follow the archive-first procedure and never delete, overwrite, or guess through locks, collisions, or uncertain ownership.
+4. Before drafting, use `document-validation-pipeline` once to validate the detected stage, issue coverage, response scope, competent authority, conflicting material, and unresolved items. After drafting, check only that the text matches that validation unless the basis materially changes.
+5. Draft the substantive basis in Markdown first. Apply `admin-document-base-review` and the relevant document-reading skill.
+6. Select the current stage's deidentified Markdown example through `templates/SAMPLE_CATALOG.md` and use it only as a structure reference. For HWP/HWPX form work, call `hwp-hwpx-processing`; do not treat a Markdown example as a binary template.
+7. If the user requests case replacement, follow the archive-first procedure and never delete, overwrite, or guess through locks, collisions, or uncertain ownership.
 
 ## References
 

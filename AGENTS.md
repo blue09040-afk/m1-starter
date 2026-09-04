@@ -36,6 +36,7 @@
 2. 저장소 구조, 설치·동기화, 공통 지침 개정, 공유본 정리를 다루는 경우에만 `README.md`를 확인하고 `guidance-repo-maintenance`를 적용한다.
 3. 사건·업무 폴더에서는 `HANDOFF_SUMMARY.md`가 있으면 먼저 읽고, 없으면 신규 건으로 보고 실제 폴더와 주요 자료의 성격을 파악한다. HANDOFF는 다음 작업을 찾기 위한 스냅샷이지 사실·법령·최종본의 정본이 아니므로, 기준 시점과 실제 파일을 확인하고 더 최신 원자료·최종 산출물이 있으면 최신 파일을 우선한다. 기본지침 저장소 자체를 점검할 때는 HANDOFF 부재를 신규 사건으로 보지 않는다.
 4. 한국 행정·민원·감사·조사·공문 문서를 검토·작성·정리할 때는 `admin-document-base-review`를 공통 출발점으로 적용한다. 상세 공통 판단 기준이 실제로 필요할 때만 `guides/BASE_INSTRUCTIONS.md`의 관련 절을 확인한다.
+   - 원자료를 바탕으로 쟁점·범위·소관을 정하는 실질적 사건 검토라면 문안 작성 전에 `document-validation-pipeline`의 사건 검토 검증을 적용하고, 문안 작성 뒤에는 같은 검증결과와의 일치만 간단히 확인한다.
 5. 공익신고, 문서 추출, 최종 다듬기, 굵은 수정안, 자동검증, 담당부서 확인처럼 더 구체적인 조건이 충족되면 해당 전문 스킬을 함께 적용한다.
    - 권익위·도권익위 고충민원 1·2·3단계의 폴더 기반 검토, 공문 초안, 사건 교체와 비식별 샘플 관리는 `acrc-grievance-complaint-workflow`를 적용한다.
    - 진정민원 접수 후 담당부서에 `진정사항 관련 추진내용 및 향후 해소계획` 제출을 요청하는 1단계 검토·초안은 `petition-resolution-plan-workflow`를 적용한다.
@@ -56,7 +57,7 @@
 - `public-interest-report-review`: 공익신고 대상성, 소관, 통지, 신고자 보호·비밀보장 검토.
 - `acrc-grievance-complaint-workflow`: 권익위·도권익위 고충민원 1·2·3단계의 폴더 기반 검토, 공문 초안, 사건 교체와 비식별 샘플 관리.
 - `petition-resolution-plan-workflow`: 진정민원 1단계에서 민원내용과 기존 수·발신 자료를 검토하고 담당부서 해소계획 제출 요청용 `< 민원 내용 및 요청사항 정리 >` 초안을 작성하는 절차.
-- `document-validation-pipeline`: 대외·결재용 문안 작성·수정 후 누락, 위험 표현, 정합성 검증.
+- `document-validation-pipeline`: 문안 작성 전 사건의 근거·쟁점·범위·소관을 검증하고, 작성 뒤 문안과 검증결과의 일치를 확인.
 - `pdf-reading-kit`: PDF 진단, 추출, Markdown 변환, 로컬 또는 승인된 외부 OCR.
 - `hwp-hwpx-processing`: 바이너리 HWP 변환과 HWPX 읽기·작성·편집·검증.
 - `official-letter-final-review`: 완성 단계 공문·회신문·보고서의 최종 다듬기와 결재 전 검토.
