@@ -39,7 +39,7 @@
 
 조직의 보안·네트워크 정책을 최우선으로 적용합니다. 아래 기준은 starter의 안전한 초기값이며, 실제 허용 범위가 다르면 새 저장소의 정본에 맞게 조정합니다.
 
-원격 정본 저장소, 로컬 지침 원본, Codex 설치본, 앱 인식을 함께 점검하거나 중단된 동기화를 복구할 때의 상세 실행 정본은 `skills/guidance-repo-maintenance/references/repository_sync_workflow.md`입니다. 이 절차는 복제 후 사용자의 정본 저장소를 대상으로 하며 원본 제공자의 `m1`을 자동 동기화하는 절차가 아닙니다.
+원격 정본 저장소, 로컬 지침 원본, Codex 설치본, 앱 인식을 함께 점검하거나 중단된 동기화를 복구할 때의 상세 실행 정본은 `skills/guidance-sync/references/repository_sync_workflow.md`입니다. 지침 내용 자체의 개정·정리는 `guidance-repo-maintenance`, 확정된 지침의 동기화·설치 반영은 `guidance-sync`가 맡습니다. 이 절차는 복제 후 사용자의 정본 저장소를 대상으로 하며 원본 제공자의 `m1`을 자동 동기화하는 절차가 아닙니다.
 
 | 환경 | 기본 방식 | 하지 않을 일 |
 |---|---|---|
