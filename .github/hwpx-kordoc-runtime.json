@@ -13,13 +13,13 @@
   },
   "template_source_verification": {
     "repository": "blue09040-afk/m1-starter",
-    "workflow_run_id": null,
-    "artifact_id": null,
-    "artifact_digest": null,
-    "source_sha": null,
-    "workflow_conclusion": "pending",
+    "workflow_run_id": 34282456109,
+    "artifact_id": 10078147077,
+    "artifact_digest": "sha256:ed4fa6aceef94faa41d13d0712e043fe81bd95ada1b63002a4fe28eab66fbfc9",
+    "source_sha": "bb4f946e821d25d34ec9d2cd6935a5bde52dd39e",
+    "workflow_conclusion": "success",
     "artifact_contents_verified": false
   },
   "cloned_repository_policy": "run HWPX Kordoc Check once in the cloned repository and use only that repository's artifact",
-  "status": "pending-template-source-validation"
+  "status": "workflow-verified-artifact-present"
 }
