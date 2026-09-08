@@ -8,7 +8,7 @@
 
 ## starter와 복제 저장소의 경계
 
-- `.github/hwpx-kordoc-runtime.json`에 기록된 `template_source_verification`은 **이 starter 저장소 자체에서 workflow가 정상 동작했다는 검증 기록**이다.
+- `.github/hwpx-kordoc-runtime.json`에 기록된 `template_source_verification`은 **이 starter 저장소 자체에서 workflow가 정상 동작했다는 시점별 검증 기록**이다. 짧은 보존기간의 artifact는 이후 만료될 수 있으므로 manifest의 상태값은 현재 artifact의 실시간 존재 여부를 뜻하지 않는다.
 - GitHub Actions artifact와 run ID는 저장소별 자원이다. `Use this template`로 만든 새 저장소에서는 starter의 `artifact_id`나 `workflow_run_id`를 자신의 artifact처럼 재사용하지 않는다.
 - 새 저장소에서는 `HWPX Kordoc Check`를 한 번 실행하여 **자기 저장소의 runtime artifact**를 생성한다.
 - artifact 이름은 동일하게 `m1-starter-hwpx-kordoc-chat-linux-x64`를 사용할 수 있지만, 실제 artifact ID와 run ID는 각 저장소에서 새로 만들어진다.
