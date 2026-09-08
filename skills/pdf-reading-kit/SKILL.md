@@ -10,7 +10,7 @@ metadata:
 ## Core Workflow
 
 1. Diagnose before OCR: distinguish text PDF, broken encoding/ToUnicode, image-only pages, permission restrictions and extraction-tool limitations.
-2. If only some pages extract blank, inspect the source/page resources before declaring them blank or OCRing the whole document.
+2. If only some pages extract blank, inspect the source/page resources before declaring them blank or OCRing the whole document. Prefer selective OCR for the failed pages after a package/text extraction attempt.
 3. Keep privacy masking off by default. Use masking only when explicitly requested, and distinguish text masking from flattened visual redaction.
 4. For private case material, use local extraction first. External OCR or conversion requires explicit approval for the service and transfer target.
 5. For local image-PDF assistance, prefer a verified local OneOCR runtime when available, then Tesseract, then Windows OCR. Treat OCR as a reading aid and recheck critical names, dates, amounts and legal citations against the source.

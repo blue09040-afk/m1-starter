@@ -9,7 +9,7 @@ metadata:
 
 ## Core Workflow
 
-1. Treat `.hwpx` as a ZIP/XML package and inspect `Preview/PrvText.txt` and `Contents/section*.xml` when text/package checks are enough.
+1. Prefer Kordoc-based package reading for `.hwpx` when Node execution is available. Inspect `Preview/PrvText.txt` and `Contents/section*.xml` for quick text/package checks; escalate to selective OCR only for pages that stay blank or unreadable after package extraction.
 2. Treat binary `.hwp` as a conversion source and use `tools/HWPX_READING_KIT/` for the official-converter path. Do not commit the converter runtime itself.
 3. Keep masking off by default. If an AI-review text artifact needs masking, use an explicit opt-in path and preserve the original file.
 4. Draft substantive text in Markdown first unless direct HWPX output is explicitly required.
@@ -27,3 +27,4 @@ metadata:
 - Do not commit `node_modules`, converter runtimes, DLL/model payloads, actual case HWPX files, extracted case text, or generated outputs.
 - Do not claim visual verification when the file was not opened/rendered in an appropriate viewer.
 - Do not overwrite source documents by default; write a separate output.
+- Do not OCR an entire mixed document by default when only some pages failed package extraction.

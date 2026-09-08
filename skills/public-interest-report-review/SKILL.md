@@ -26,8 +26,8 @@ Use this section as the short routing layer before opening a reference. For a lo
   - Read when: eligibility/classification is disputed, authority or protection duties affect the result, the reply standard is unclear, or an earlier judgment needs re-checking.
   - Skip/reduce when: the matter is already classified and only an unrelated drafting or file-format task remains. Do not re-read it mechanically at every paragraph or stage.
 - `references/case_operations.md`
-  - Purpose: operational handling for department investigation requests, department reply review, reporter result notices, ACRC replies, deidentified Markdown samples, and archive-first case replacement.
-  - Read when: one of those operational steps is actually being performed.
+  - Purpose: operational handling for department investigation requests, department reply review, reporter result notices, ACRC replies, deidentified Markdown samples, case closeout, and archive-first case replacement.
+  - Read when: one of those operational steps is being performed, or the user asks to finish a public-interest-report case and organize its files or prepare the workspace for the next case.
 - `templates/SAMPLE_CATALOG.md`
   - Purpose: maps each public-interest workflow step to the active deidentified Markdown structure example.
   - Read when: drafting or reviewing a stage-specific work product in Chat or Codex.
