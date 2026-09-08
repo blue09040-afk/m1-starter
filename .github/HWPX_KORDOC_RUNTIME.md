@@ -15,6 +15,8 @@
 
 ## starter의 의존성 방식
 
+공식 `m1-starter`의 reusable Kordoc 실행 코드는 원본 `m1`에서 이미 병합·검증된 공개 가능한 실행 경로를 선택적으로 동기화한다. 현재 기준 Kordoc은 **4.12.0**이다. 코드나 직접 의존성을 가져왔다고 해서 원본 `m1`의 artifact 검증을 starter 검증으로 재사용하지 않으며, starter 자체 Actions에서 다시 검증한다.
+
 starter는 대형 `package-lock.json`과 `node_modules`를 Git에 포함하지 않는다.
 
 1. `package.json`의 직접 의존성은 exact pin한다.
@@ -42,4 +44,4 @@ starter는 대형 `package-lock.json`과 `node_modules`를 Git에 포함하지 �
 
 ## 변경 시 검증
 
-Kordoc 또는 직접 의존성, `scripts/kordoc/` 실행 코드, runtime workflow를 변경하면 `HWPX Kordoc Check`를 다시 실행한다. 성공 여부와 artifact 생성까지 확인하되, 새 저장소에서 사용하는 artifact는 항상 그 저장소의 Actions 실행으로 생성한다.
+Kordoc 또는 직접 의존성, `scripts/kordoc/` 실행 코드, runtime workflow를 변경하면 기존 `template_source_verification`을 현재 검증으로 간주하지 않고 `HWPX Kordoc Check`를 다시 실행한다. 성공 여부와 artifact 생성까지 확인한 뒤 manifest를 해당 성공 실행 기준으로 갱신한다. 새 저장소에서 사용하는 artifact는 항상 그 저장소의 Actions 실행으로 생성한다.
