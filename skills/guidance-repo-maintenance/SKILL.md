@@ -20,7 +20,8 @@ metadata:
 
 ## References
 
-- Read `references/repository_sync_workflow.md` when checking or synchronizing the current canonical guidance repository across GitHub, a local guidance source, installed Codex skills, and app recognition, or when publishing local guidance changes through a branch and PR.
+- Use this skill for the guidance content change itself. After the change is confirmed, use `guidance-sync` for GitHub/local/installed-skill synchronization or for publishing those confirmed changes through a branch and PR.
+- Read `skills/guidance-sync/references/repository_sync_workflow.md` for the detailed sync procedure. The former path `references/repository_sync_workflow.md` remains as a compatibility pointer.
 - Read `references/reusable_guide_packaging_standard.md` for package structure and security preflight rules.
 - Read `references/deidentified_sample_publishing_standard.md` when converting a confirmed document into a reusable deidentified Markdown structure or prose example.
 - Read `references/continuous_improvement_loop.md` for lesson candidate, approval, adoption, and stale-review flow.
