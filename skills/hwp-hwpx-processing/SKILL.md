@@ -9,13 +9,14 @@ metadata:
 
 ## Core Workflow
 
-1. Prefer Kordoc-based package reading for `.hwpx` when Node execution is available. Inspect `Preview/PrvText.txt` and `Contents/section*.xml` for quick text/package checks; escalate to selective OCR only for pages that stay blank or unreadable after package extraction.
-2. Treat binary `.hwp` as a conversion source and use `tools/HWPX_READING_KIT/` for the official-converter path. Do not commit the converter runtime itself.
-3. Keep masking off by default. If an AI-review text artifact needs masking, use an explicit opt-in path and preserve the original file.
-4. Draft substantive text in Markdown first unless direct HWPX output is explicitly required.
-5. When Node execution is available, use `scripts/kordoc/src/cli.mjs` for HWPX analyze/write/template/patch/fill/collect/validate operations.
-6. Preserve reference-document structure where layout matters; do not rebuild complex forms from plain Markdown unless layout loss is acceptable.
-7. A generated HWPX is not final merely because package validation passes. For final submission, verify in the actual target viewer when possible.
+1. For ordinary `.hwp` and `.hwpx` reading, prefer a **verified Kordoc parse-only route** when the current environment actually provides one. Start with OCR, PIILOT, and privacy masking off. For HWPX, inspect `Preview/PrvText.txt`, `Contents/section*.xml`, embedded-image references, or warnings only when completeness or package structure needs a cross-check.
+2. Treat successful native extraction as partial when scanned pages, embedded images, or warnings indicate possible missing task-relevant text. OCR only affected pages or images when feasible, and keep OCR as a labeled supplement rather than replacing reliable native text or tables.
+3. For binary `.hwp`, use Kordoc first when a verified parse route is available. Use `tools/HWPX_READING_KIT/` and the official Hancom converter as a fallback or structural cross-check when Kordoc is unavailable, fails, looks incomplete, or exact HWPX package/layout inspection or editing is required. Do not commit the converter runtime itself.
+4. Keep masking off by default. If an AI-review text artifact needs masking, use an explicit opt-in path and preserve the original file.
+5. Draft substantive text in Markdown first unless direct HWPX output is explicitly required.
+6. When Node execution is available, use `scripts/kordoc/src/cli.mjs` for HWPX analyze/write/prepare-template/template/patch/fill/collect/validate operations. The presence of this authoring runtime alone does not prove that a generic HWP/PDF parse-only route is available.
+7. Preserve reference-document structure where layout matters; do not rebuild complex forms from plain Markdown unless layout loss is acceptable.
+8. A generated HWPX is not final merely because package validation passes. For final submission, verify in the actual target viewer when possible.
 
 ## References
 
