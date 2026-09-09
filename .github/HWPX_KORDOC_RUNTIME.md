@@ -8,12 +8,14 @@
 
 ## starter와 복제 저장소의 경계
 
-- `.github/hwpx-kordoc-runtime.json`에 기록된 `template_source_verification`은 **이 starter 저장소 자체에서 workflow가 정상 동작했다는 검증 기록**이다.
+- `.github/hwpx-kordoc-runtime.json`에 기록된 `template_source_verification`은 **이 starter 저장소 자체에서 workflow가 정상 동작했다는 시점별 검증 기록**이다. 짧은 보존기간의 artifact는 이후 만료될 수 있으므로 manifest의 상태값은 현재 artifact의 실시간 존재 여부를 뜻하지 않는다.
 - GitHub Actions artifact와 run ID는 저장소별 자원이다. `Use this template`로 만든 새 저장소에서는 starter의 `artifact_id`나 `workflow_run_id`를 자신의 artifact처럼 재사용하지 않는다.
 - 새 저장소에서는 `HWPX Kordoc Check`를 한 번 실행하여 **자기 저장소의 runtime artifact**를 생성한다.
 - artifact 이름은 동일하게 `m1-starter-hwpx-kordoc-chat-linux-x64`를 사용할 수 있지만, 실제 artifact ID와 run ID는 각 저장소에서 새로 만들어진다.
 
 ## starter의 의존성 방식
+
+공식 `m1-starter`의 reusable Kordoc 실행 코드는 원본 `m1`에서 이미 병합·검증된 공개 가능한 실행 경로를 선택적으로 동기화한다. 현재 기준 Kordoc은 **4.12.0**이다. 코드나 직접 의존성을 가져왔다고 해서 원본 `m1`의 artifact 검증을 starter 검증으로 재사용하지 않으며, starter 자체 Actions에서 다시 검증한다.
 
 starter는 대형 `package-lock.json`과 `node_modules`를 Git에 포함하지 않는다.
 
@@ -42,4 +44,4 @@ starter는 대형 `package-lock.json`과 `node_modules`를 Git에 포함하지 �
 
 ## 변경 시 검증
 
-Kordoc 또는 직접 의존성, `scripts/kordoc/` 실행 코드, runtime workflow를 변경하면 `HWPX Kordoc Check`를 다시 실행한다. 성공 여부와 artifact 생성까지 확인하되, 새 저장소에서 사용하는 artifact는 항상 그 저장소의 Actions 실행으로 생성한다.
+Kordoc 또는 직접 의존성, `scripts/kordoc/` 실행 코드, runtime workflow를 변경하면 기존 `template_source_verification`을 현재 검증으로 간주하지 않고 `HWPX Kordoc Check`를 다시 실행한다. 성공 여부와 artifact 생성까지 확인한 뒤 manifest를 해당 성공 실행 기준으로 갱신한다. 새 저장소에서 사용하는 artifact는 항상 그 저장소의 Actions 실행으로 생성한다.
