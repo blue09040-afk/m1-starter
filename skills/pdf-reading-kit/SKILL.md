@@ -30,6 +30,10 @@ metadata:
 - Install Python dependencies from `tools/PDF_READING_KIT/requirements.txt` into the recipient's own environment rather than committing vendored packages.
 - Keep `.env` local; only `.env.example` belongs in Git.
 
+## References
+
+- Read `references/GITHUB_PDF_SOURCE_HANDOFF.md` when a PDF lives in GitHub, especially a private repository, or when an existing extracted Markdown must be checked against the original PDF.
+
 ## Boundaries
 
 - Do not send private/nonpublic PDFs to external services without explicit approval.
