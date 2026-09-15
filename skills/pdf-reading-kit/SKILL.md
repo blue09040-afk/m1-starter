@@ -7,6 +7,13 @@ metadata:
 
 # PDF Reading Kit
 
+## Source Acquisition Preflight
+
+- Treat checked-in Markdown/OCR/extraction artifacts as first-pass reading aids, not automatic substitutes for the source PDF. If a table, layout, image, stamp/signature, page boundary, missing passage, or extraction ambiguity could change a factual or legal conclusion, inspect the original PDF before finalizing the judgment.
+- When the source PDF is stored in an authenticated private GitHub repository and the connected GitHub MCP exposes `fetch_file(..., encoding="base64")`, use that route to retrieve the source content as Base64 instead of treating a generic UTF-8 fetch failure as "PDF unavailable." Follow `references/GITHUB_PDF_SOURCE_HANDOFF.md` for decoding, integrity checks, local handoff, and failure classification.
+- Do not emit Base64 payloads into chat, logs, reusable guidance, or case summaries. Retrieval through the authenticated GitHub connector does not authorize sending the private PDF to Web, Acrobat, OCR, or another external service.
+- Prefer an existing reliable extracted Markdown for speed, but use source-PDF verification whenever the derivative alone is insufficient for the conclusion.
+
 ## Core Workflow
 
 1. Diagnose before OCR: distinguish text PDF, broken encoding/ToUnicode, image-only pages, permission restrictions and extraction-tool limitations.
