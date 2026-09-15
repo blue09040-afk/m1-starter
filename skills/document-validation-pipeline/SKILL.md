@@ -9,7 +9,7 @@ metadata:
 
 ## Core Workflow
 
-1. Identify the current case-review basis: source files, claims or requests, department positions, legal checks, user-confirmed choices, and unresolved items.
+1. Identify the current case-review basis: source files, claims or requests, department positions, legal checks, user-confirmed choices, and unresolved items. Distinguish original files from extracted Markdown/OCR derivatives; if a derivative is ambiguous in a way that could change the conclusion, route the source PDF through `pdf-reading-kit` and verify the original before treating the point as settled.
 2. Before drafting, validate the case review once for missing or conflicting material, separation of claims/facts/inferences, omitted or unnecessarily expanded issues, proportional scope and recipients, authority and time-relevant law, necessary-minimum data sharing, and unresolved risk.
 3. Record the result in `_validation/validation_report.md`. Add source maps, legal logs, unresolved-item tables, or separate risk summaries only when the case is complex or resumability requires them.
 4. After drafting, append a brief consistency check to the same report: confirm that the draft matches the validated case review and did not introduce new omissions, overstatement, or errors. Do not repeat the full validation unless new evidence or a material change affects the issues, scope, authority, or legal basis; then revalidate only the affected parts.
