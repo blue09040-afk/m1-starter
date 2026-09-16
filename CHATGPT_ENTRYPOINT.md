@@ -32,7 +32,7 @@ Astra 자문을 준비·수행하거나 결과를 기존 작업에 반영할 때
 
 ### 자료검색 (법령·담당부서·필지·고시·웹 PDF)
 
-법령·조례·고시·담당부서·필지·웹 PDF·공식 안내문을 확인하는 요청이면 검토 유형과 관계없이 먼저 `skills/admin-source-lookup/SKILL.md`를 적용한다. 도구 선택이 애매하거나 전용 도구 실패 후 fallback, Firecrawl 사용 여부, 크레딧 통제가 실제 쟁점일 때만 GitHub `blue09040-afk/coding`의 `guides/WEB_SEARCH.md`를 추가로 읽는다.
+법령·조례·고시·담당부서·필지·웹 PDF·공식 안내문을 확인하는 요청이면 검토 유형과 관계없이 먼저 `skills/admin-source-lookup/SKILL.md`를 적용한다. 도구 선택이 애매하거나 전용 도구 실패 후 fallback, Firecrawl 사용 여부, 크레딧 통제가 실제 쟁점일 때만 `guides/WEB_SEARCH.md`를 추가로 읽는다.
 
 검색 절차 전문을 이 진입점에 복제하지 않는다. 전용 공식 경로를 먼저 쓰고, 공식 URL을 모를 때만 Web을 발견용으로 최소 사용한다. Firecrawl로 웹 PDF를 파싱하지 않으며, 일반 Chat의 네이티브 PDF 원문 확인 기능은 막지 않는다.
 
@@ -242,7 +242,7 @@ Codex의 잠정결론·권고안·회신문 초안·검증결과를 넣지 않�
 
 ### 자료검색·법령·담당부서·웹 PDF
 
-`@GitHub m1-starter의 CHATGPT_ENTRYPOINT.md를 기준으로 법령·담당부서·필지·웹 PDF를 확인해줘. 전용 공식 경로를 먼저 쓰고, 도구 선택이나 fallback이 애매할 때만 @GitHub blue09040-afk/coding의 guides/WEB_SEARCH.md를 추가로 확인해줘.`
+`@GitHub m1-starter의 CHATGPT_ENTRYPOINT.md를 기준으로 법령·담당부서·필지·웹 PDF를 확인해줘. 전용 공식 경로를 먼저 쓰고, 도구 선택이나 fallback이 애매할 때만 @GitHub m1-starter의 guides/WEB_SEARCH.md를 추가로 확인해줘.`
 
 ## 7. 정본 변경 금지
 

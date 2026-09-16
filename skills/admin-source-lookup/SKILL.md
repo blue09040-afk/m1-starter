@@ -7,7 +7,7 @@ metadata:
 
 # Admin Source Lookup
 
-민원·행정에서 외부 공식자료를 확인할 때의 분기 스킬이다. 상세 검색 도구 선택 규칙을 복제하지 않고 기존 전문 스킬과 GitHub `blue09040-afk/coding`의 검색 정본으로 연결한다.
+민원·행정에서 외부 공식자료를 확인할 때의 분기 스킬이다. 상세 검색 도구 선택 규칙을 복제하지 않고 기존 전문 스킬과 이 starter의 `guides/WEB_SEARCH.md` 검색 정본으로 연결한다.
 
 ## Core Workflow
 
@@ -19,19 +19,19 @@ metadata:
    - 웹 PDF: 일반 Chat의 네이티브 PDF 원문 확인 기능이 있으면 그 기능을 사용한다. Codex·로컬 파일 판독이면 PDF를 확보한 뒤 `pdf-reading-kit`을 적용한다. Firecrawl PDF 파싱은 사용하지 않는다.
    - 남은 공식 HTML: 공식 URL이 확인되면 해당 페이지만 직접 읽는다.
 3. 공식 URL을 모를 때는 Web 검색을 **공식 원문 발견용으로 최소 사용**할 수 있다. 공식 원문을 찾으면 검색결과 스니펫이 아니라 원문에서 확인하고, 같은 질문을 여러 검색 도구에 연속 호출하지 않는다.
-4. 도구 선택이 애매하거나 전용 도구 실패 후 fallback, Firecrawl 사용 여부, 크레딧 통제가 실제 쟁점이면 GitHub `blue09040-afk/coding`의 `guides/WEB_SEARCH.md`를 읽고 따른다. 평범한 전용 경로 조회마다 기계적으로 읽지 않는다.
+4. 도구 선택이 애매하거나 전용 도구 실패 후 fallback, Firecrawl 사용 여부, 크레딧 통제가 실제 쟁점이면 `guides/WEB_SEARCH.md`를 읽고 따른다. 평범한 전용 경로 조회마다 기계적으로 읽지 않는다.
 5. 확인하지 못한 원문은 추정하지 않고 `확인 필요`로 남긴다.
 
 ## References
 
-- GitHub `blue09040-afk/coding` / `guides/WEB_SEARCH.md` — 민원·행정 자료검색의 도구 선택·fallback·크레딧 통제 정본. 필요한 경우에만 읽는다.
+- `guides/WEB_SEARCH.md` — 민원·행정 자료검색의 도구 선택·fallback·크레딧 통제 정본. 필요한 경우에만 읽는다.
 - `hwaseong-staff-lookup` — 화성시 담당부서·담당자.
 - `pdf-reading-kit` — 파일로 확보한 PDF 판독. private GitHub PDF 획득은 `skills/pdf-reading-kit/references/GITHUB_PDF_SOURCE_HANDOFF.md`를 따른다.
 - `guides/BASE_INSTRUCTIONS.md` 17·17-1·17-2 — 법령 확인.
 
 ## Boundaries
 
-- 일반 기술·뉴스·장소 검색은 이 스킬이 아니라 `coding` `web-research/`를 따른다.
+- 일반 기술·뉴스·장소 검색은 이 스킬의 대상이 아니며, 현재 실행환경과 사용자가 정한 일반 검색 정책을 따른다.
 - GitHub 파일은 GitHub 플러그인/MCP로 읽고 Firecrawl로 읽지 않는다.
 - 실제 조회 입력에는 현재 작업에 필요한 최소 식별자만 쓴다. 필지·건축물 조회의 지번·주소처럼 조회키 자체가 필요한 경우는 사용할 수 있다.
 - 민원인 성명·연락처·내부 식별자는 필요하지 않으면 검색어에 넣지 않고, 재사용 예시·로그에는 사건 고유 식별자를 남기지 않는다.

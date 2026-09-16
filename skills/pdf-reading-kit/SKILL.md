@@ -40,4 +40,4 @@ metadata:
 - Do not send private/nonpublic PDFs to external services without explicit approval.
 - Do not treat OCR output as authoritative when the source can be checked directly.
 - Do not commit runtime DLLs/models, `.env`, extracted case text or generated PDFs/images.
-- Do not use Firecrawl to scrape or parse web PDFs. Native source-page inspection in a capable Chat environment is allowed; file acquisition then local reading is the boundary when this kit is actually used. Tool selection belongs to GitHub `blue09040-afk/coding` `guides/WEB_SEARCH.md`.
+- Do not use Firecrawl to scrape or parse web PDFs. Native source-page inspection in a capable Chat environment is allowed; file acquisition then local reading is the boundary when this kit is actually used. Tool selection belongs to local `guides/WEB_SEARCH.md`.

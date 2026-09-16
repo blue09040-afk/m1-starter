@@ -80,4 +80,4 @@ Git blob SHA는 개념적으로 `SHA1("blob " + byte_length + "\0" + raw_bytes)`
 - 일반 Chat에 네이티브 PDF 열기·페이지 확인 기능이 실제로 있으면 공식 PDF 원문을 그 경로로 직접 확인할 수 있다.
 - Codex·로컬처럼 `pdf-reading-kit`을 사용하는 경로에서는 파일을 확보한 뒤 본 절차로 판독한다.
 - 직접 원문 확인도 파일 확보도 불가능하면 공식 주소만 제시하거나 첨부를 요청한다.
-- 도구 선택·크레딧 통제는 GitHub `blue09040-afk/coding`의 `guides/WEB_SEARCH.md`를 따른다.
+- 도구 선택·크레딧 통제는 `guides/WEB_SEARCH.md`를 따른다.

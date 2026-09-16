@@ -66,7 +66,7 @@
 - `bold-revision-review`: 수정 부분을 굵게 표시한 Markdown 검토본 작성.
 - `iterative-review`: 작성된 산출물을 제3자 관점에서 검토·직접 수정하고 실질적 수정 필요가 없어질 때까지 반복 검증.
 - `hwaseong-staff-lookup`: 화성시 담당부서·담당업무·담당자·행정번호·관할 확인.
-- `admin-source-lookup`: 민원 자료검색 분기. 도구 선택 정본은 GitHub `blue09040-afk/coding`의 `guides/WEB_SEARCH.md`.
+- `admin-source-lookup`: 민원 자료검색 분기. 도구 선택 정본은 `guides/WEB_SEARCH.md`.
 - `guidance-sync`: 현재 정본 GitHub 저장소, 로컬 기본지침, Codex 설치본, 앱 인식 사이의 동기화와 최신본 반영.
 - `guidance-repo-maintenance`: 공통 지침·스킬·프롬프트·실행 키트 개정, 개선 이력, 마무리.
 - NotebookLM CoWork 결과를 탐색 보조자료로 쓰면 `guides/notebooklm_cowork_cli_guide.md`를 적용한다.
