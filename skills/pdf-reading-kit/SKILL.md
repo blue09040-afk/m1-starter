@@ -13,6 +13,7 @@ metadata:
 - When the source PDF is stored in an authenticated private GitHub repository and the connected GitHub MCP exposes `fetch_file(..., encoding="base64")`, use that route to retrieve the source content as Base64 instead of treating a generic UTF-8 fetch failure as "PDF unavailable." Follow `references/GITHUB_PDF_SOURCE_HANDOFF.md` for decoding, integrity checks, local handoff, and failure classification.
 - Do not emit Base64 payloads into chat, logs, reusable guidance, or case summaries. Retrieval through the authenticated GitHub connector does not authorize sending the private PDF to Web, Acrobat, OCR, or another external service.
 - Prefer an existing reliable extracted Markdown for speed, but use source-PDF verification whenever the derivative alone is insufficient for the conclusion.
+- For a web PDF, use the current environment's direct/native PDF reading path when it can actually inspect the source pages. In Codex or a local workflow that requires this kit, acquire the PDF by download, user attachment, or a supported authenticated fetch and then read the local file. Do not use Firecrawl to scrape or parse the PDF. If neither direct source-page inspection nor file acquisition is available, give the official URL or request an attachment.
 
 ## Core Workflow
 
@@ -39,3 +40,4 @@ metadata:
 - Do not send private/nonpublic PDFs to external services without explicit approval.
 - Do not treat OCR output as authoritative when the source can be checked directly.
 - Do not commit runtime DLLs/models, `.env`, extracted case text or generated PDFs/images.
+- Do not use Firecrawl to scrape or parse web PDFs. Native source-page inspection in a capable Chat environment is allowed; file acquisition then local reading is the boundary when this kit is actually used. Tool selection belongs to local `guides/WEB_SEARCH.md`.

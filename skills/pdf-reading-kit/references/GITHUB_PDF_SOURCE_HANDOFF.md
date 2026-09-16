@@ -71,3 +71,13 @@ Git blob SHA는 개념적으로 `SHA1("blob " + byte_length + "\0" + raw_bytes)`
 - `원본 접근 실패`: authenticated Base64 경로 등 사용 가능한 원본 획득 경로 자체가 실패한 경우
 
 단순히 generic fetch가 바이너리를 거절했다는 이유만으로 마지막 상태를 사용하지 않는다.
+
+## 8. 웹 PDF와의 경계
+
+이 문서는 private GitHub PDF 획득 절차의 정본이다. GitHub 밖 웹 PDF에는 같은 보안 원칙을 적용하되, 실행환경이 원문 페이지를 직접 확인할 수 있는지 먼저 구분한다. 검색 도구 선택 본문은 복제하지 않는다.
+
+- 웹 PDF는 Firecrawl scrape/parse로 읽지 않는다.
+- 일반 Chat에 네이티브 PDF 열기·페이지 확인 기능이 실제로 있으면 공식 PDF 원문을 그 경로로 직접 확인할 수 있다.
+- Codex·로컬처럼 `pdf-reading-kit`을 사용하는 경로에서는 파일을 확보한 뒤 본 절차로 판독한다.
+- 직접 원문 확인도 파일 확보도 불가능하면 공식 주소만 제시하거나 첨부를 요청한다.
+- 도구 선택·크레딧 통제는 `guides/WEB_SEARCH.md`를 따른다.

@@ -36,6 +36,8 @@ Grok 일반 Chat은 **기본 검토 경로가 아니다.** ChatGPT 토큰 소진
 
 현재 기준은 **GitHub이 연결된 Grok 일반 Chat**이다. 이 환경에는 Codex의 Luna·Terra·Sol 모델분할, `spawn_agent`, 사무실 로컬 PowerShell·한컴 COM·OneOCR가 없다. 필요하면 도구를 병렬로 호출할 수 있으나, 하위 작업을 다른 등급 모델에 위임하는 하네스는 적용하지 않는다. GitHub 커넥터의 쓰기 도구·권한은 현재 세션에서 실제 제공 여부를 확인하며 기본 전제로 두지 않는다.
 
+이 문서에 GitHub 읽기·쓰기 절차가 정의되어 있다는 사실은 Grok에만 GitHub 권한이 있다는 뜻이 아니다. 다른 모델·세션도 현재 클라이언트가 동일한 GitHub 도구와 권한을 실제 제공하면 각 환경의 공통 GitHub 작업 경계 안에서 사용할 수 있다.
+
 - 가능: 지정된 GitHub 지침·텍스트 추출본 읽기, `review`의 지정 사건 `extracted/` 읽기, 공식 법령·웹 확인
 - 조건부 가능: 결과 Markdown을 GitHub에 저장. 현재 세션에 실제 쓰기 도구가 있고 대상 저장소 쓰기 권한이 확인된 경우에만 수행한다.
 - 기본 전제 아님: 사무실 PC 로컬 Git 접속, HWP COM, OneOCR, Codex 스킬 동기화, Luna/Terra 서브에이전트. GitHub 커넥터만으로 HWPX·PDF 원본의 안정적 화면 판독도 보장하지 않는다.

@@ -7,6 +7,15 @@
 - 사용자가 공통 규칙으로 채택하거나 반영을 승인한 변경만 기록합니다.
 - 기록 시 날짜, 변경 요약, 정본 파일 경로를 남깁니다.
 
+## 2026-09-16 — 행정 자료검색·Kordoc 읽기·OpenCodex 권한 경계 동기화
+
+- 계기: 원본 정본의 2026-09-16 병합 변경 중 공개·재사용 가능한 PR #42~#44가 starter에 아직 반영되지 않은 상태를 확인함.
+- 반영 범위: `AGENTS.md`, `CHATGPT_ENTRYPOINT.md`, `GROK_ENTRYPOINT.md`, `skills/admin-source-lookup/`, `skills/admin-document-base-review/SKILL.md`, `skills/pdf-reading-kit/`, `skills/hwp-hwpx-processing/`, `guides/harness_structure_guide_v1_3.md`, `guides/opencodex_grok_runtime.md`, 본 이력.
+- 자료검색: 법령·조례·고시·담당부서·필지·웹 PDF는 전용 공식 경로를 먼저 사용하고, 공식 URL을 모를 때만 Web을 발견용으로 최소 사용한다. Firecrawl은 웹 PDF의 기본 판독 경로로 사용하지 않으며 도구 선택·fallback은 필요할 때만 starter 내부 `guides/WEB_SEARCH.md`를 참조한다.
+- HWP/HWPX: Windows에서는 전역 PATH의 `kordoc` 유무와 실제 runtime 가용성을 구분하고, `invoke_kordoc_reading.cmd`로 고정 runtime을 먼저 확인한다. 단순 command-not-found만으로 PATH 변경·패키지 설치·HWP COM/OLE 전환을 요청하지 않는다.
+- OpenCodex: 과거 Gemini 전용 외부 패킷 워커의 비활성 상태와 현재 OpenCodex runtime을 분리하고, Gemini·Grok 등 routed 모델의 사용 가능 여부는 현재 roster·surface·도구 가용성과 공급자·자료 경계로 판단한다. 모델 전환은 파일·셸·GitHub 권한을 확대하지 않는다.
+- starter 경계: 로컬 runtime payload·사건자료·개인 설정은 추가하지 않고, starter 전용 독립 운영 원칙을 유지한다.
+
 ## 2026-09-15 — private GitHub PDF 원본 확인 경로 채택
 
 - 계기: GitHub 사건폴더에 PDF와 추출 Markdown이 함께 있을 때 일반 Chat이 추출본만으로 판단하거나, generic UTF-8 fetch 실패를 PDF 자체의 접근 불가로 오인할 수 있음을 실제 도구 검증에서 확인함.
