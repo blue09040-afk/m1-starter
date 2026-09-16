@@ -15,7 +15,7 @@
 
 ## starter의 의존성 방식
 
-공식 `m1-starter`의 reusable Kordoc 실행 코드는 원본 `m1`에서 이미 병합·검증된 공개 가능한 실행 경로를 선택적으로 동기화한다. 현재 기준 Kordoc은 **4.12.0**이다. 코드나 직접 의존성을 가져왔다고 해서 원본 `m1`의 artifact 검증을 starter 검증으로 재사용하지 않으며, starter 자체 Actions에서 다시 검증한다.
+공식 `m1-starter`의 reusable Kordoc 실행 코드는 원본 `m1`에서 이미 병합·검증된 공개 가능한 실행 경로를 선택적으로 동기화한다. 현재 기준 Kordoc은 **4.13.1**이다. 코드나 직접 의존성을 가져왔다고 해서 원본 `m1`의 artifact 검증을 starter 검증으로 재사용하지 않으며, starter 자체 Actions에서 다시 검증한다.
 
 starter는 대형 `package-lock.json`과 `node_modules`를 Git에 포함하지 않는다.
 
