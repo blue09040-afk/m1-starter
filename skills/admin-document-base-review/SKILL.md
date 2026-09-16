@@ -25,6 +25,7 @@ metadata:
   - `official-letter-final-review` for final polishing before approval or dispatch.
   - `document-validation-pipeline` once after substantive case review and before drafting; after drafting, use only its brief consistency check unless the basis materially changes.
   - `pdf-reading-kit` or `hwp-hwpx-processing` for fragile document extraction or HWPX work.
+  - `admin-source-lookup` for 법령·담당부서·필지·고시·웹 PDF lookup before considering Firecrawl or broad/general web search; minimal Web discovery of an unknown official URL is allowed by that skill.
 
 ## Boundaries
 
