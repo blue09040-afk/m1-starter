@@ -62,3 +62,27 @@ Template Repository를 사용하지 않는 경우에도 공유받은 starter 자
 ## review와 함께 사용할 때
 
 `review-starter`도 자신의 Private 저장소로 별도 복제해 사건자료·작업자료와 공통지침을 분리하는 것을 권장합니다. `review`의 자동 문서추출과 OneOCR 검증은 해당 저장소의 Actions에서 독립적으로 동작합니다.
+
+## 선택 사항: 내 장기 memory 만들기
+
+문안을 반복 수정하면서 확인된 **비민감 작성 선호와 재사용 가능한 처리 패턴**을 별도 저장소에 보관하고 싶다면, 공개 [memory-starter](https://github.com/blue09040-afk/memory-starter)를 사용합니다. memory를 만들지 않아도 `m1`·`review`의 기본 업무는 정상적으로 할 수 있습니다.
+
+GitHub를 처음 사용한다면 다음을 **웹 화면에서 한 번씩** 진행합니다.
+
+1. [m1-starter](https://github.com/blue09040-afk/m1-starter)를 열고 **Use this template → Create a new repository**를 선택합니다. Owner는 내 GitHub 계정, 이름은 `m1`, Visibility는 **Private**로 정한 뒤 생성합니다.
+2. [review-starter](https://github.com/blue09040-afk/review-starter)에서도 같은 순서로 **내 계정의 Private `review`**를 생성합니다. 기관에서 사건자료를 외부 GitHub에 보관할 수 있는지 먼저 확인합니다.
+3. 장기 기억을 쓰려면 [memory-starter](https://github.com/blue09040-afk/memory-starter)에서도 같은 순서로 **내 계정의 Private `memory`**를 생성합니다. 이 공개 starter 자체에 실제 기억을 적지 않습니다.
+4. ChatGPT의 연결된 GitHub 접근 권한에 **내 세 저장소**가 포함되어 있는지 확인합니다. GitHub 계정이 다르거나 Private 저장소가 보이지 않으면 접근 권한을 확인하되, 토큰 추출·우회 연결은 시도하지 않습니다.
+5. `m1`의 `CHATGPT_ENTRYPOINT.md`와 `skills/document-revision-memory/SKILL.md`를 확인합니다. 실제 GitHub 인증 계정과 `memory` 소유자가 일치하고 `memory`가 Private인지 확인될 때만 `memory/README.md` → `memory/MEMORY.md` → `memory/m1/MEMORY.md` 순서로 필요한 내용을 읽습니다.
+
+기억을 저장할 때는 사건 원문·실명·개인정보·내부 문서번호·비밀정보를 제외합니다. memory는 현재 사건 증거·법령·지침을 대체하지 않으며, 기존 파일 저장은 최신 버전을 확인하는 **조건부 갱신**만 허용합니다.
+
+처음 연결 확인용 요청 예시:
+
+```text
+@GitHub에서 내가 소유한 Private m1, review, memory 저장소를 확인해줘.
+내 m1의 CHATGPT_ENTRYPOINT.md와 document-revision-memory를 읽고,
+내 memory의 README.md, MEMORY.md, m1/MEMORY.md를 필요한 범위에서 확인해줘.
+타인 소유 memory에는 접근하지 말고, 내 memory가 없거나 읽기 권한이 없으면
+일반 m1·review 업무만 진행해줘. 읽기 또는 저장 성공을 추정해서 말하지 마.
+```
