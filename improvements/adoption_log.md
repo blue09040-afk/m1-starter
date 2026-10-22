@@ -7,6 +7,13 @@
 - 사용자가 공통 규칙으로 채택하거나 반영을 승인한 변경만 기록합니다.
 - 기록 시 날짜, 변경 요약, 정본 파일 경로를 남깁니다.
 
+## 2026-10-22 — 공개 재사용 지침·실무 샘플 동기화
+
+- 계기: 원본 `m1`의 확정 변경 중 안전하게 일반화한 판례검색·담당업무 조회·공익신고 공문 예시·문서 인수인계·하네스 개선을 starter에서 사용할 수 있도록 요청함.
+- 반영: `skills/lawnb-local-case-law-lookup/`, `skills/admin-source-lookup/`, `skills/hwaseong-staff-lookup/`, `skills/public-interest-report-review/`, `skills/acrc-grievance-complaint-workflow/references/case_replacement.md`, `guides/BASE_INSTRUCTIONS.md`, `guides/harness_structure_guide_v1_3.md`, `prompts/` 관련 파일.
+- starter 독립성: 개인 `memory`의 실제 기록, 소유자 고정 경로, 비공개 사건 내용은 포함하지 않고 개인별 memory 연결은 별도 선택 기능으로 유지함.
+- 범위: 공개 가상 샘플·운영 패턴만 반영하며 법령·담당업무는 매 사건 현재 원문을 다시 확인함.
+
 ## 2026-09-16 — 행정 자료검색·Kordoc 읽기·OpenCodex 권한 경계 동기화
 
 - 계기: 원본 정본의 2026-09-16 병합 변경 중 공개·재사용 가능한 PR #42~#44가 starter에 아직 반영되지 않은 상태를 확인함.
