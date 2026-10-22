@@ -55,8 +55,8 @@
 
 - 다음 작업에 영향을 주는 개인정보·비공개·외부전송 제한이 있을 때만 적습니다.
 - 사건 폴더, 산출물 파일명, `다음에 읽을 파일`, 미해결 사건 상태는 **HANDOFF에만** 둡니다. 이를 장기 memory의 `history/`, `knowledge/`, `preferences/`, `workflows/`에 사건 재개용 색인으로 복제하지 않습니다.
-- 공문 수정 과정에서 재사용 가능한 사용자 선호·업무유형별 패턴이 실제로 확인됐고 장기 memory 저장이 필요한 경우에만 `skills/document-revision-memory/SKILL.md`와 해당 저장소 계약을 별도로 적용합니다. 이때도 사건 고유 사실·실제 파일명·폴더명은 memory에 넣지 않습니다.
-- 기존 `LLM_Wiki/`는 새 기록 정본이 아니라 legacy 이전 원본입니다. 인수인계 과정에서 갱신하지 않으며, 이전 작업이 필요할 때만 `prompts/migrate_llm_wiki_to_memory.md`를 적용합니다.
+- 공문 수정 과정에서 재사용 가능한 비민감 패턴이 실제로 확인됐고 사용자의 Private `memory`가 연결되어 있으며 `skills/document-revision-memory/SKILL.md`가 존재하는 경우에만 해당 스킬과 사용자의 memory 저장소 `README.md`를 적용합니다. 연결 또는 스킬이 없다면 별도 memory 저장 없이 인수인계만 수행합니다. 이때도 사건 고유 사실·실제 파일명·폴더명은 memory에 넣지 않습니다.
+- 기존 `LLM_Wiki/`는 새 기록 정본이 아니라 legacy 이전 원본입니다. 인수인계 과정에서 갱신하지 않으며, 이전 작업이 명시적으로 요청된 경우에만 원본 보존·비식별·중복 검증 계획을 별도로 세워 처리합니다.
 
 ## 작성 원칙
 
