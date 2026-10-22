@@ -7,9 +7,10 @@
 | 업무 | 기본 샘플 | 유형 | 상태 | 채택일 | 사용 조건 |
 |---|---|---|---|---|---|
 | 접수·대상성·소관 검토 | `intake_jurisdiction_review_masked_example.md` | 구조 예시 | active | 2026-08-26 | 신고내용을 쟁점별로 분류하고 소관·보완 필요를 정리 |
-| 담당부서 의견·조사결과 요청 | `department_opinion_request_masked_example.md` | 구조 예시 | active | 2026-08-21 | 조사부서와 요청 쟁점이 정해져 조사요청 공문 작성 |
+| 담당부서 의견·조사결과 요청 | `department_opinion_request_standard_masked_example.md` | 문안 예시 | active | 2026-10-06 | 조사부서와 요청 쟁점이 정해진 공익신고 1단계 공문. 기본은 간결한 2문단 구조이며, 별도 기한이 없으면 작성일로부터 1개월을 회신기한 실무값으로 사용 |
+| 담당부서 의견·조사결과 요청(이전) | `department_opinion_request_masked_example.md` | 구조 예시 | deprecated | 2026-08-21 | 2026-10-06 기본 샘플 교체. 호환성 참고용으로만 보존 |
 | 담당부서 회신 검토 | `department_reply_review_masked_example.md` | 구조 예시 | active | 2026-08-26 | 부서 회신·증빙의 답변성, 근거, 누락과 조치상태를 대조 |
-| 신고자 조사결과 통보 | `reporter_result_notice_masked_example.md` | 구조 예시 | active | 2026-08-21 | 조사와 내부 검토가 끝나 신고자에게 결과 통지 |
+| 신고자 조사결과 통보 | `reporter_result_notice_masked_example.md` | 문안 예시 | active | 2026-10-20 | 신고자 통보 실무형 문안: 법령·적용 기준 → 현장 확인·소명 → 판단 → 완료 조치·향후 안내. 이의신청 문구는 통지주체·법적 요건 확인 후 적용 |
 | 권익위 조사결과 회신 — 대외 공문 | `acrc_result_official_letter_masked_example.md` | 구조 예시 | active | 2026-08-26 | 국민권익위원회에 조사결과를 제출하는 시행 공문의 번호체계·문단 순서 작성 |
 | 권익위 조사결과 제출용 서식 — 기본 개조식 | `acrc_result_notice_flat_masked_example.md` | HWPX·서식 구조 예시 | active | 2026-08-21 | 권익위 제출용 조사결과 서식 또는 빠른 HWPX 입력 구조 작성 |
 | 권익위 조사결과 제출용 서식 — 2단 개조식 | `acrc_result_notice_two_level_masked_example.md` | HWPX·서식 구조 예시 | conditional | 2026-08-21 | 제출용 서식에서 둘 이상의 확인 사실에 서로 다른 조치·진행상황이 대응 |
