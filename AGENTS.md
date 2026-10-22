@@ -56,6 +56,7 @@
 ## 전문 스킬
 
 - `admin-document-base-review`: 한국 행정·민원·감사·조사·공문 작업의 공통 기준.
+- `document-revision-memory`: 자신의 Private `memory`에 있는 비민감 문안 수정 패턴을 필요할 때만 읽고, 조건부 쓰기가 가능한 경우에만 안전하게 갱신.
 - `public-interest-report-review`: 공익신고 대상성, 소관, 통지, 신고자 보호·비밀보장 검토.
 - `acrc-grievance-complaint-workflow`: 권익위·도권익위 고충민원 1·2·3·4단계의 폴더 기반 검토, 공문 초안, 사건 교체와 비식별 샘플 관리. 4단계는 국민권익위원회의 법 제46조제2항 의견표명 전용 분기이다.
 - `petition-resolution-plan-workflow`: 진정민원 1단계 담당부서 해소계획 요청과 2단계 회신·증빙 검토 및 민원인 답변서 작성 절차.
