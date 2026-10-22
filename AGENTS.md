@@ -109,11 +109,11 @@
 
 ## 개인정보·산출물·개선
 
-- 개인정보는 업무 판단에 필요한 최소 범위를 넘어 추출·목록화·요약·재사용하지 않고 산출물, 로그, 개선사항, LLM Wiki, 외부 검색어에서 비식별화하거나 제외한다.
+- 개인정보는 업무 판단에 필요한 최소 범위를 넘어 추출·목록화·요약·재사용하지 않고 산출물, 로그, 개선사항, legacy Wiki, 장기 memory, 외부 검색어에서 비식별화하거나 제외한다.
 - 공유 전에는 사건자료, 개인정보, 내부 문서번호, 결재선, API 키, `.env`, 변환 로그, `output/`, `_validation/`, HWPX 잔존 텍스트를 점검한다.
 - 사건 고유 사실·담당자 정보·일회성 판단은 공통 지침에 넣지 않고 사건 산출물이나 `HANDOFF_SUMMARY.md`에 둔다.
 - 반복 교훈은 자동 승격하지 않는다. 사용자가 반영을 요청하거나 승인한 공통 항목만 원본 지침에 반영하고 `improvements/`에 이력을 남긴다.
-- `LLM_Wiki/`에는 일반지식과 비식별 색인만 두며, 상세 인수인계는 사건 폴더에 둔다. 마무리 시 일반지식과 작업이력 반영 여부를 분리해 판단한다.
+- `LLM_Wiki/`는 과거 참고자료이며 새 기록을 의무화하지 않는다. 상세 사건 인수인계는 사건 폴더에 두고, 재사용 가능한 비민감 장기 패턴만 자신의 Private `memory`가 실제 연결된 경우에 한해 별도 스킬·운영 계약으로 다룬다. 외부 이관·삭제는 명시적 요청 없이 하지 않는다.
 - 복수 Markdown 검토의견이 누적되어 최종본이 헷갈릴 때만 `001_...`, `900_..._최종.md`, `00_검토의견_목록.md` 체계를 적용한다.
 
 ## 재사용 프롬프트
@@ -122,4 +122,4 @@
 - 자동검증·반영: `prompts/run_validation.md`, `prompts/revise_final_reply.md`
 - 인수인계: `prompts/create_handoff.md`
 - 교훈 추출·승격: `prompts/extract_lessons_learned.md`, `prompts/promote_lesson_to_guideline.md`
-- LLM Wiki: `prompts/update_llm_wiki.md`
+- 비민감 장기 memory (선택): `prompts/update_llm_wiki.md`. 사용자 자신의 Private memory가 연결되어 있고 해당 스킬을 확인할 때만 적용한다.
