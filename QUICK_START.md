@@ -16,6 +16,8 @@
 
 > 실제 사건자료·개인정보·비공개 자료를 GitHub나 외부 AI에 올릴 수 있는지는 각 기관의 보안·개인정보 정책을 우선합니다.
 
+**장기 memory는 선택 기능입니다.** 공개 `memory-starter`에서 **Use this template**으로 자기 계정에 Private `memory`를 만든 경우, GitHub 인증 계정과 저장소 owner가 일치하고 저장소가 Private인지 확인한 다음 `@GitHub memory`의 `README.md` → `MEMORY.md` → `m1/MEMORY.md`를 필요한 범위에서 읽고 `skills/document-revision-memory/SKILL.md`에 따라 현재 문안에 필요한 비민감 패턴만 참고하세요. 원본 제공자의 memory를 사용하거나 공개 starter에 개인 memory를 기록하지 않습니다. 연결되지 않았다면 기존 지침만으로 진행하면 됩니다.
+
 ---
 
 ## 2. 자주 쓰는 검토 요청
