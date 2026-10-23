@@ -7,6 +7,12 @@
 - 사용자가 공통 규칙으로 채택하거나 반영을 승인한 변경만 기록합니다.
 - 기록 시 날짜, 변경 요약, 정본 파일 경로를 남깁니다.
 
+## 2026-10-23 — 행정 기본검토 간소화 및 하네스 모델 역할 정비
+
+- 계기: 원본 m1의 Sol 6.1 최적화 지침(PR #48)과 비기본 모델 참조 정리(PR #49) 중 공개 재사용 규격을 starter 경계에 맞게 반영함.
+- 반영: `skills/admin-document-base-review/SKILL.md`, `skills/admin-document-base-review/references/start_case_review.md`, `guides/chatgpt_sol_external_review_harness.md`, 본 이력.
+- 내용: 기계적인 분류표·계획표·검증 산출물 생성을 강제하지 않고 사건 실질에 맞는 산출물 설계를 우선하며, 외부 memory 연결 시 사용자 본인의 Private memory 저장소를 명시적으로 연계하도록 정비함.
+
 ## 2026-10-22 — 공개 재사용 지침·실무 샘플 동기화
 
 - 계기: 원본 `m1`의 확정 변경 중 안전하게 일반화한 판례검색·담당업무 조회·공익신고 공문 예시·문서 인수인계·하네스 개선을 starter에서 사용할 수 있도록 요청함.
