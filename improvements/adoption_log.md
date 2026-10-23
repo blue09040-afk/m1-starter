@@ -9,7 +9,7 @@
 
 ## 2026-10-23 — 행정 기본검토 간소화 및 하네스 모델 역할 정비
 
-- 계기: Sol 6.1 최적화 지침(PR #48)과 비기본 모델 참조 정리(PR #49)의 잔여 공통 지침을 starter 경계에 맞게 반영함.
+- 계기: 원본 m1의 Sol 6.1 최적화 지침(PR #48)과 비기본 모델 참조 정리(PR #49) 중 공개 재사용 규격을 starter 경계에 맞게 반영함.
 - 반영: `skills/admin-document-base-review/SKILL.md`, `skills/admin-document-base-review/references/start_case_review.md`, `guides/chatgpt_sol_external_review_harness.md`, 본 이력.
 - 내용: 기계적인 분류표·계획표·검증 산출물 생성을 강제하지 않고 사건 실질에 맞는 산출물 설계를 우선하며, 외부 memory 연결 시 사용자 본인의 Private memory 저장소를 명시적으로 연계하도록 정비함.
 
